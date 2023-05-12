@@ -6,6 +6,10 @@ import { AlimentosProductComponent } from './product/alimentos-product/alimentos
 import { SaludProductComponent } from './product/salud-product/salud-product.component';
 import { JoyasProductComponent } from './product/joyas-product/joyas-product.component';
 import { DescartablesProductComponent } from './product/descartables-product/descartables-product.component';
+import { LoginComponent } from './user/login/login.component';
+import { RegisterComponent } from './user/register/register.component';
+import { PagoComponent } from "./carro/pago/pago.component"
+import { CarComponent } from './carro/car/car.component';
 
 const routes: Routes = [
   {
@@ -16,6 +20,18 @@ const routes: Routes = [
   {
     path:'calzado',
     component:CalzadoProductComponent,
+  },
+  {
+    path:'login',
+    component:LoginComponent,
+  },
+  {
+    path:'register',
+    component:RegisterComponent,
+  },
+  {
+    path:'car',
+    component:CarComponent,
   },
 {
   path:'alimentos',
@@ -32,6 +48,10 @@ const routes: Routes = [
 {
   path:'descartables',
   component:DescartablesProductComponent,
+},
+{
+  path:'pago',
+  component:PagoComponent
 }
 ];
 

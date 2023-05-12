@@ -311,3 +311,10 @@ nav {
     color: #000000;
     text-decoration: underline;
   }
+
+  .custom-li{
+    list-style: none;
+  }
+  h2{
+    color: #2E7D32;
+  }

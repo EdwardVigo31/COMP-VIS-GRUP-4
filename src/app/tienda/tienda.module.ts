@@ -10,6 +10,10 @@ import { RouterModule, Routes } from '@angular/router';
 import { TiendaRoutingModule } from './tienda.rounting.module';
 import { MaterialModule } from '../material/material.module';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
+import { PagoComponent } from "./carro/pago/pago.component";
+import { LoginComponent } from './user/login/login.component';
+import { RegisterComponent } from './user/register/register.component';
+import { CarComponent } from './carro/car/car.component';
 
 
 @NgModule({
@@ -20,6 +24,10 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
     SaludProductComponent,
     DescartablesProductComponent,
     AlimentosProductComponent,
+    PagoComponent,
+    CarComponent,
+    LoginComponent,
+    RegisterComponent
 
   ],
   imports: [
