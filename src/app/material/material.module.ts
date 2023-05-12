@@ -7,9 +7,9 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatToolbarModule} from "@angular/material/toolbar"
-import { MatCard } from "@angular/material/card"
+import { MatCard, MatCardModule } from "@angular/material/card"
 import { MatGridList } from "@angular/material/grid-list"
-import {  } from "@angular/material"
+
 
 @NgModule({
   declarations: [],
@@ -24,6 +24,7 @@ import {  } from "@angular/material"
     MatTableModule,
     MatDatepickerModule,
     MatToolbarModule,
+    MatCardModule
   ]
 })
 export class MaterialModule { }
