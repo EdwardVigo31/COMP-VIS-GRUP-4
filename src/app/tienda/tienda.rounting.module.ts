@@ -6,6 +6,7 @@ import { AlimentosProductComponent } from './product/alimentos-product/alimentos
 import { SaludProductComponent } from './product/salud-product/salud-product.component';
 import { JoyasProductComponent } from './product/joyas-product/joyas-product.component';
 import { DescartablesProductComponent } from './product/descartables-product/descartables-product.component';
+import { InfoPagoComponent } from './product/info-pago/info-pago.component';
 
 const routes: Routes = [
   {
@@ -21,18 +22,18 @@ const routes: Routes = [
   path:'alimentos',
   component:AlimentosProductComponent,
   },
-{
-  path:'joyas',
-  component:JoyasProductComponent,
-},
-{
-  path:'salud',
-  component:SaludProductComponent,
-},
-{
-  path:'descartables',
-  component:DescartablesProductComponent,
-}
+  {
+    path:'joyas',
+    component:JoyasProductComponent,
+  },
+  {
+    path:'salud',
+    component:SaludProductComponent,
+  },
+  {
+    path:'descartables',
+    component:DescartablesProductComponent,
+  },
 ];
 
 @NgModule({
