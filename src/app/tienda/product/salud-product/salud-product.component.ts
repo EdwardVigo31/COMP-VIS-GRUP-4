@@ -3,8 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-salud-product',
   templateUrl: './salud-product.component.html',
-  styles: [
-  ]
+  styleUrls: ['./salud-product.component.css']
 })
 
 export class SaludProductComponent {

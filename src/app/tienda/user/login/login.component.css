@@ -1,0 +1,39 @@
+.center-form {
+    overflow: hidden;
+    height: calc(100vh - 56px);
+}
+
+.card-auth {
+    border-radius: 15px;
+    background-color: #defdd3;
+    overflow: auto;
+}
+.item-control{
+    margin: 20px;
+}
+
+.card-auth-header {
+    font-size: 28px;
+    text-align: center;
+}
+
+.card-auth-title {
+    color: #486d3a;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .card-auth {
+        padding: 1rem;
+        width: 435px;
+    }
+
+    .center-form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

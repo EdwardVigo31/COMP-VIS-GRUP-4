@@ -1,0 +1,71 @@
+<nav class="navbar navbar-expand-lg p-0" style="background-color: #e9f9e4; height: 56px">
+    <div class="container-fluid">
+        <a routerLink="/" class="navbar-brand">
+            <picture class="d-flex justify-content-center align-items-center">
+                <span class="fs-2 fw-bold" style="color: #486d3a">NATUR</span>
+                <img src="assets/img/hojita.jpeg" alt="hoja" width="40" height="40" />
+            </picture>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+
+            <form class="d-flex mx-auto" role="search">
+                <input class="form-control me-4" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success btn-sm" type="submit"><svg xmlns="http://www.w3.org/2000/svg"
+                        width="20" height="20" fill="#8CCE91" class="bi bi-search" viewBox="0 0 16 16">
+                        <path
+                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                    </svg></button>
+            </form>
+
+
+            <div class="carrito">
+                <a routerLink="/login" (click)="onCardClick('login')" class="login" ><button class="btn btn-outline-success" style="margin-right: 10px;">login</button>
+                </a>
+                <a href=""><button class="btn btn-outline-success "style="margin-right: 30px;">register</button></a>
+
+                <a style="margin-right: 30px;" routerLink="/carrito" class="car"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                        fill="#486D3A" class="bi bi-cart" viewBox="0 0 16 16">
+                        <path
+                            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                    </svg>
+                    <span class="position-absolute translate-middle badge rounded-pill bg-danger">
+                        2
+                    </span></a>
+            </div>
+        </div>
+
+    </div>
+</nav>
+<div class="center-form p-5">
+    <form class="card-auth">
+    <picture class="d-flex justify-content-center align-items-center">
+        <span class="card-auth-title">NATUR</span>
+        <img src="assets/img/hojita.jpeg" alt="hoja" width="50" height="50" />
+    </picture>
+    <div class="card-body">
+        <div class="mb-3 item-control">
+            <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+                placeholder="Ingresa tu correo" />
+        </div>
+        <div class="mb-3 item-control">
+            <input type="password" class="form-control" id="password" placeholder="Ingresa tu contraseña" />
+        </div>
+        <div class="text-center">
+            <a href="#" class="text-decoration-none text-black">¿Olvidaste tu contraseña?</a>
+        </div>
+    </div>
+    <div class="mb-1 px-4">
+        <button type="submit" class="btn btn-natur btn-outline-success w-100" routerLink="/alimentos-product" (click)="onCardClick('alimentos-product')">Iniciar sesión</button>
+    </div>
+    <div class="d-flex justify-content-center align-items-center mb-1">
+        <span class="me-2">¿No tienes una cuenta?</span>
+        <a class="text-decoration-none text-black" routerLink="/register" href="" (click)="onCardClick('register')">Regístrate</a>
+
+    </div>
+
+</form>
+</div>
