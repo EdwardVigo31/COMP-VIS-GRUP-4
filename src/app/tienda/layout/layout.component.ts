@@ -10,4 +10,11 @@ export class LayoutComponent implements OnInit{
   signOut() {
     console.log('Me fui');
   }
+
+  onCardClick() {
+    console.log('Clicked on card with title:');
+};
+
 }
+
+

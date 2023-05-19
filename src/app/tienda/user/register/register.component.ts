@@ -6,8 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./register.component.css']
 })
 export class RegisterComponent {
-  onCardClick(cardTitle: string) {
-    console.log('Clicked on card with title:', cardTitle);
-  }
+
+  onCardClick() {
+    console.log('Clicked on card with title:');
+};
 
 }
