@@ -16,16 +16,41 @@ const routes: Routes = [
   {
   path:'',
   component:LayoutComponent,
-  children:[ 
+  children: [ 
     {
-    path:'moda',
-    component:ModaProductComponent,
-    
-  },
-  {
-    path:'calzado',
-    component:CalzadoProductComponent,
-  },
+      path:'',
+      component:ModaProductComponent,
+    },
+    {
+      path:'calzado',
+      component:CalzadoProductComponent,
+    },
+    {
+      path:'car',
+      component:CarComponent,
+    },
+    {
+      path:'alimentos',
+      component:AlimentosProductComponent,
+    },
+    {
+      path:'joyas',
+      component:JoyasProductComponent,
+    },
+    {
+      path:'salud',
+      component:SaludProductComponent,
+    },
+    {
+      path:'descartables',
+      component:DescartablesProductComponent,
+    },
+    {
+      path:'pago',
+      component:PagoComponent
+    }
+  ],
+},
   {
     path:'login',
     component:LoginComponent,
@@ -34,32 +59,6 @@ const routes: Routes = [
     path:'register',
     component:RegisterComponent,
   },
-  {
-    path:'car',
-    component:CarComponent,
-  },
-{
-  path:'alimentos',
-  component:AlimentosProductComponent,
-  },
-{
-  path:'joyas',
-  component:JoyasProductComponent,
-},
-{
-  path:'salud',
-  component:SaludProductComponent,
-},
-{
-  path:'descartables',
-  component:DescartablesProductComponent,
-},
-{
-  path:'pago',
-  component:PagoComponent
-}
-]
-}
 ];
 
 @NgModule({

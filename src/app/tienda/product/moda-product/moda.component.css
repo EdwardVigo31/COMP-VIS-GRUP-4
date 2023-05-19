@@ -32,24 +32,9 @@ nav {
     display: flex;
     justify-content: center;
   }
-  .scroll-container {
-    display: flex;
-    scroll-snap-type: x mandatory;
-    overflow-x: scroll;
-  }
   
-  .scroll-item {
-    flex: 0 0 100%;
-    scroll-snap-align: start;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
   
-  .scroll-item img {
-    max-width: 100%;
-    max-height: 100%;
-  }
+  
   .col-2 {
     flex: 0 0 16.66667%;
     max-width: 16.66667%;

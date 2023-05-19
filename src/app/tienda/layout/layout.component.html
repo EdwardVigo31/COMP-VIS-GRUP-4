@@ -3,15 +3,62 @@
   </head>
   
   <nav>
-    <div class="logo">NATURA</div>
+    <div class="logo" routerLink="">NATURA</div>
     <div class="search-box">
       <input type="text" placeholder="Buscar productos" />
     </div>
     <div class="icons">
       <mat-icon class="icon">person</mat-icon>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <mat-icon class="icon">shopping_cart</mat-icon>
+      <mat-icon class="icon" routerLink="/car" >shopping_cart</mat-icon>
     </div>
   </nav>
+  
+  <div class="container-md" >
+    <div id="myCarousel" class="carousel slide mb-4" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://saboryestilo.com.mx/wp-content/uploads/2019/03/que-alimentos-aportan-mas-proteinas-1-800x400.jpg" alt="Imagen 1" class="carousel-img">
+        </div>
+        <div class="carousel-item">
+          <img src="https://concepto.de/wp-content/uploads/2015/03/alimentos-e1549655531380.jpg" alt="Imagen 2" class="carousel-img">
+        </div>
+        <div class="carousel-item">
+          <img src="https://alertausil.com/storage/posts/images/a45d88a7c942e59049d2734abace8658cc6433a3.png" alt="Imagen 3" class="carousel-img">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </a>
+      <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </a>
+    </div>
+    <div class="d-flex justify-content-center" >
+      <div class="scroll-container mx-4">
+        <div class="scroll-item mx-2">
+          <img src="./../../../../assets/moda.jpg" alt="Imagen 1" routerLink="/">
+        </div>
+        <div class="scroll-item mx-2">
+          <img src="./../../../../assets/calzado.jpg" alt="Imagen 2" routerLink="/calzado">
+        </div>
+        <div class="scroll-item mx-2">
+          <img src="./../../../../assets/alimentos.jpg" alt="Imagen 3" routerLink="/alimentos">
+        </div>
+        <div class="scroll-item mx-2">
+          <img src="./../../../../assets/salud.jpg" alt="Imagen 4" routerLink="/salud">
+        </div>
+        <div class="scroll-item mx-2">
+          <img src="./../../../../assets/descartables.jpg" alt="Imagen 5"  routerLink="/descartables">
+        </div>
+        <div class="scroll-item mx-2">
+          <img src="./../../../../assets/joyas.jpg" alt="Imagen 6" routerLink="/joyas">
+        </div>
+      </div>
+    </div>
+  </div>
+  
   <div class="container p-5">
     <router-outlet></router-outlet>
   </div>

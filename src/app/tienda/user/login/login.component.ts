@@ -8,8 +8,8 @@ import { Component } from '@angular/core';
 
 export class LoginComponent {
 
-  onCardClick(cardTitle: string) {
-    console.log('Clicked on card with title:', cardTitle);
+  onCardClick() {
+    console.log('Clicked on card with title:');
 };
 
 }

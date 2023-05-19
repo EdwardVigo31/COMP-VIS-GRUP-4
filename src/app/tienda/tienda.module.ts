@@ -15,6 +15,7 @@ import { LoginComponent } from './user/login/login.component';
 import { RegisterComponent } from './user/register/register.component';
 import { CarComponent } from './carro/car/car.component';
 import { LayoutComponent } from './layout/layout.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -37,7 +38,7 @@ import { LayoutComponent } from './layout/layout.component';
     TiendaRoutingModule,
     MaterialModule,
     SlickCarouselModule,
-  
+    FormsModule
     
   ]
 })
