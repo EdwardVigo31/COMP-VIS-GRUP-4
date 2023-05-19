@@ -10,10 +10,15 @@ import { LoginComponent } from './user/login/login.component';
 import { RegisterComponent } from './user/register/register.component';
 import { PagoComponent } from "./carro/pago/pago.component"
 import { CarComponent } from './carro/car/car.component';
+import { LayoutComponent } from './layout/layout.component';
 
 const routes: Routes = [
   {
-    path:'',
+  path:'',
+  component:LayoutComponent,
+  children:[ 
+    {
+    path:'moda',
     component:ModaProductComponent,
     
   },
@@ -52,6 +57,8 @@ const routes: Routes = [
 {
   path:'pago',
   component:PagoComponent
+}
+]
 }
 ];
 
